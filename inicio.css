@@ -1,0 +1,641 @@
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#title{
+  flex-direction: column;
+  line-height: 10px;
+  
+}
+
+li{
+  display: inline-block;
+  margin: 20px;
+}
+
+
+a{
+  color: white;
+}
+
+a:hover{
+  color: rgb(132, 14, 201);
+  transition: 0.3s all;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 15px rgb(132, 14, 201);
+    transform: scale(1.05);
+  }
+  50% {
+    box-shadow: 0 0 20px rgb(132, 14, 201);
+    transform: scale(1.1);
+  }
+  100% {
+    box-shadow: 0 0 15px rgb(132, 14, 201);
+    transform: scale(1.05);
+  }
+}
+
+#inscreva-se-btn {
+  display: inline-block;
+  margin: 20px;
+  background-color: rgb(132, 14, 201);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: all 0.2s;
+}
+
+#inscreva-se-btn:hover{
+  display: inline-block;
+  margin: 20px;
+  background-color: rgb(132, 14, 201);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  animation: glow 2s infinite alternate;
+  /* O valor "infinite" faz a animação repetir indefinidamente */
+  /* O valor "alternate" faz a animação ir e voltar, para suavizar a transição */
+}
+
+header .header-item:hover {
+  color: rgb(132, 14, 201);
+  transform: scale(1.15);
+  transition: .2s;
+}
+
+/*HEADER*/
+body {
+  background-color: rgb(34, 34, 34);
+  color: white;
+  font-family: roboto;
+  font-weight: 200;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+} 
+
+
+@keyframes textUCM {
+  0% {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffffff, 0 0 20px #ffffff, 0 0 25px #ffffff, 0 0 30px #ffffff, 0 0 35px #ffffff;
+  }
+  50% {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
+  }
+  100% {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffffff, 0 0 20px #ffffff, 0 0 25px #ffffff, 0 0 30px #ffffff, 0 0 35px #ffffff;
+  }
+}
+
+
+
+#title h1 {
+  animation: textUCM 2s infinite, textBlink2 1s infinite;
+}
+
+.logo {
+  height: 50px; /* ajuste o tamanho conforme necessário */
+}
+
+
+h1 {
+  font-size:  50px;
+  font-weight: 500;
+  font-style: italic; 
+}
+
+
+
+.italic {
+  font-style: italic;
+}
+
+.titulo {
+  font-size:  50px;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+/*imagem*/
+
+#title {
+  display: flex;
+  align-items: center;
+}
+
+#title .logo {
+  width: 150px; /* Ajuste o valor conforme necessário */
+  margin-right: 10px; /* Ajuste o valor conforme necessário */
+}
+
+.italic {
+  font-style: italic;
+}
+
+
+
+
+
+/*UCM MULTIMARCAS BEM VINDO*/
+
+
+.bvUCM img {
+  width: 50px; /* Ajuste o tamanho conforme necessário */
+  vertical-align: middle;
+  padding-bottom: 20px;
+}
+
+#title h1 {
+  animation: textglow 2s infinite, textBlink 1s infinite;
+}
+
+@keyframes textglow {
+  0% {
+      text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #ffffff, 0 0 8px #ffffff, 0 0 10px #ffffff, 0 0 12px #ffffff, 0 0 14px #ffffff;
+  }
+  2% {
+      text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px #ffffff, 0 0 16px #ffffff, 0 0 20px #ffffff, 0 0 24px #ffffff, 0 0 28px #ffffff;
+  }
+  2% {
+      text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #ffffff, 0 0 8px #ffffff, 0 0 10px #ffffff, 0 0 12px #ffffff, 0 0 14px #ffffff;
+  }
+}
+
+
+@keyframes textBlink2 {
+  0%, 100% {
+    opacity: 0; /* Texto apagado */
+  }
+  50% {
+    opacity: 1; /* Texto aceso */
+  }
+}
+
+.bvUCM h1 {
+  font-size: 54px;
+  color: #ffffff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+  animation: textBlink 3s infinite, textGlow 5s infinite; /* Aplica as duas animações em sequência */
+  font-weight: bold;
+}
+
+/*UCM MULTIMARCAS BEM VINDO*/
+
+
+/*Slider estilização*/
+
+.slider{
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 50px;
+  border: 3px solid #aa2bf3; /* Cor roxa #840EC9 com 5px de largura */
+}
+
+.slides {
+  width: 400%;
+  height: 400px;
+  display: flex;
+  transition: 1s;
+}
+
+.slides input {
+  display: none;
+  transition: 1s;
+  
+}
+
+.slides {
+  width: 25%;
+  position: relative;
+  transition: 1s;
+  
+}
+
+.slides img {
+  width: 800px;
+  transition: 1s;
+  
+}
+
+.manual-navigation{
+  position: absolute;
+  width: 800px;
+  margin-top: -45px;
+  margin-left: 200px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.manual-btn {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .5s;
+  text-align: center;
+}
+
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+
+.manual-btn:hover {
+  background-color: white;
+}
+
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+  transition: 1s;
+
+}
+
+#radio2:checked ~ .first {
+  margin-left: -400%;
+  transition: 1s;
+}
+
+
+
+#radio3:checked ~ .first {
+  margin-left: -800%;
+  transition: 1s;
+}
+
+
+
+
+/*contúdo-do-site*/
+
+/*responsivo*/
+
+
+
+/*3 veiculos embaixo*/
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Distribui os itens uniformemente ao longo do eixo principal (horizontal) */
+  align-items: flex-start;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.card {
+  width: 30%; /* Definir uma largura fixa para as cartas para garantir que elas caibam na tela */
+  text-align: center; /* Centraliza o texto */
+}
+
+.card img {
+  width: 100%; /* Garante que a imagem ocupe 100% da largura da div .card */
+  height: 200px;
+  object-fit: cover;
+  scale: 1.1;
+  border-radius: 50px;
+  border: 2.5px solid #ffffff; /* Cor roxa #840EC9 com 5px de largura */
+  cursor: pointer;
+}
+
+/*3 veiculos embaixo*/
+
+.section {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 4px solid #414141;
+}
+.section:nth-child(2) {
+  align-self: center;
+  text-align: right;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.section:nth-child(3) {
+  align-self: flex-end;
+  text-align: left;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+/*conteudo*/
+
+
+
+
+
+
+
+/*SLIDER*/
+
+.container h2 {
+  color: #aa2bf3;
+}
+
+
+
+/*FOOTER e LI OL ETC*/
+
+li strong{
+  color: rgb(132, 14, 201);
+  font-size: 35px;
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: list;
+  }
+
+ol li::before {
+  content: counter(item) ". ";
+  font-size: 35px; 
+  counter-increment: item;
+  font-weight: bold;
+  }
+
+ol li {
+  counter-increment: list;
+  font-size: 25px;
+    }
+
+ol li:before {
+  content: counter(list) ".";
+  margin-right: 0.5em;
+    }
+
+ol li p {
+  margin-left: 1em;
+ }
+
+/*footer*/
+
+.footer {
+  background-color: #333;
+   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  }
+  
+.footer-column {
+    flex: 1;
+    margin: 0 10px;
+  }
+
+  /*SITE UNICESUMAR*/
+
+.list-item {
+  display: flex;
+  align-items: center;
+}
+.list-item i {
+  margin-right: 2px; /* Espaço entre a logo e o texto */
+}
+.list-item a {
+  margin-left: 2px; /* Espaço entre a logo e o link */
+}
+
+/*SITE UNICESUMAR*/
+
+
+.integrantes {
+  display: inline-block;
+  margin: 5px;
+ }
+  
+/* Estilos para telas menores */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-direction: column; /* Por padrão, as colunas ficam uma abaixo da outra */
+  /* Outros estilos */          
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os itens verticalmente */
+}
+
+/*hidenshow*/
+
+.footer-column h3 {
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.footer-column h3 .toggle-arrow {
+  transition: transform 0.3s;
+}
+.footer-column h3.active .toggle-arrow {
+  transform: rotate(90deg);
+}
+
+.footer-column h3 {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-column h3 .arrow-right {
+  width: 10px;
+  height: 10px;
+  border: solid rgb(255, 255, 255);
+  border-width: 0 2px 2px 0;
+  transform: rotate(-45deg); /* Rotação inicial apontando para a direita */
+  transition: transform 0.3s;
+  margin-left: 10px; /* Alterado para margin-left para posicionar após o texto */
+}
+.footer-column h3.active .arrow-right {
+  transform: rotate(45deg); /* Rotação quando ativo (aponta para baixo) */
+}
+
+.footer-column ul {
+  display: none;
+}
+
+/*fim do hidenshow*/
+
+.footer-column h3 .text-primary {
+  color: rgb(132, 14, 201);
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Additional Styles */
+.list-item {
+  display: flex;
+  align-items: center;
+}
+
+.list-item i {
+  margin-right: 2px;
+}
+
+.list-item a {
+  margin-left: 2px;
+}
+
+.integrantes {
+  display: inline-block;
+  margin: 5px;
+}
+
+/* Alteração para orientação vertical */
+@media screen and (max-width: 767px) {
+  .footer-column {
+    margin: 10px 0; /* Espaçamento entre as colunas na orientação vertical */
+  }
+}
+
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  scale: 1.1;
+  border-radius: 50px;
+  border: 2.5px solid #ffffff;
+  cursor: pointer;
+}
+
+
+
+
+
+/*RESPONSIVO*/
+
+
+
+
+
+
+/* CSS para telas menores que 767px de largura */
+@media (max-width: 767px) {
+  .card img {
+      height: auto; /* Remove a altura fixa */
+  }
+
+  .manual-navigation {
+    position: absolute;
+    width: calc(100% - 280px); /* 100% da largura da tela menos 140px de margin-left e margin-right */
+    margin-top: -45px;
+    display: flex;
+    margin-left: 0;
+    left: 140px;
+}
+
+.slider {
+    margin: 0 auto;
+    width: calc(100% - 5px); /* 100% da largura da tela menos 20px de padding-horizontal */
+    height: 300px; /* Reduz a altura para se ajustar melhor em telas menores */
+    overflow: hidden;
+    border-radius: 50px;
+    border: 3px solid #aa2bf3;
+}
+
+.slide img {
+  width: 600px;
+  height: auto;
+  object-fit: contain; /* Mantém a proporção e centraliza a imagem dentro do container */
+  margin: 0 auto; /* Centraliza horizontalmente a imagem dentro do container */
+
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem para uma nova linha conforme necessário */
+  justify-content: space-around; /* Distribui os itens uniformemente ao longo do eixo principal */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.card {
+  width: 100%; /* Altera a largura das cartas para ocupar toda a largura do container */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%; /* Garante que a imagem ocupe 100% da largura da carta */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 50px;
+  border: 2.5px solid #840EC9; /* Cor roxa com 2.5px de largura */
+  cursor: pointer;
+}
+
+.section {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 4px solid #414141;
+  text-align: center;
+}
+
+.section:nth-child(2),
+.section:nth-child(3) {
+  align-self: center; /* Alinha as seções centralmente */
+}
+
+/*carrosel*/
+#radio1:checked ~ .first {
+  margin-left: -80%;
+  transition: 1s;
+
+}
+
+#radio2:checked ~ .first {
+  margin-left: -850%;
+  transition: 1s;
+}
+
+
+
+#radio3:checked ~ .first {
+  margin-left: -1450%;
+  transition: 1s;
+}
+
+
+
+
+}

@@ -1,0 +1,483 @@
+
+
+
+/* financeiro2.css */
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+body {
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0;
+    font-family: roboto;
+    background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+h1 {
+  text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+/*responsivo*/
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/*responsivo*/
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+/*responsivo*/
+
+
+button:hover {
+  background-color: rgb(153, 33, 223);
+}
+
+/*responsivo*/
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    margin-top: 20px;
+    font-family: roboto;
+}
+
+button:hover {
+    background-color: rgb(153, 33, 223);
+}
+
+
+canvas {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  padding: 10px 20px;
+}
+
+canvas {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+#myChart {
+  display: none; /* Oculta o canvas inicialmente */
+  margin-top: 20px;
+}
+
+/*grafico responsivo*/
+
+@media (max-width: 600px) {
+  .container {
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  input[type="number"], button {
+      font-size: 14px;
+      padding: 8px;
+  }
+  
+
+  #myChart {
+      width: 150%;
+      height: auto; /* Garante que o canvas se ajuste ao tamanho do contêiner */
+  }
+}
+
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.result {
+    font-size: 20px;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 15px;
+    display: none;
+}
+
+.result.lucro {
+    background-color: #d4edda;
+    color: #155724;
+    border: 3px solid #c3e6cb;
+    font-weight: 700;
+}
+
+.result.prejuizo {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 3px solid #f5c6cb;
+    font-weight: 700;
+}
+
+
+#title{
+  flex-direction: column;
+  line-height: 10px;
+  
+}
+
+li{
+  display: inline-block;
+  margin: 20px;
+}
+
+
+a{
+  color: white;
+}
+
+a:hover{
+  color: rgb(132, 14, 201);
+  transition: 0.3s all;
+}
+  
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 15px rgb(132, 14, 201);
+      transform: scale(1.05);
+    }
+    50% {
+      box-shadow: 0 0 20px rgb(132, 14, 201);
+      transform: scale(1.1);
+    }
+    100% {
+      box-shadow: 0 0 15px rgb(132, 14, 201);
+      transform: scale(1.05);
+    }
+  }
+  
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 15px rgb(132, 14, 201);
+      transform: scale(1.05);
+    }
+    50% {
+      box-shadow: 0 0 20px rgb(132, 14, 201);
+      transform: scale(1.1);
+    }
+    100% {
+      box-shadow: 0 0 15px rgb(132, 14, 201);
+      transform: scale(1.05);
+    }
+  }
+  
+  #inscreva-se-btn {
+    display: inline-block;
+    margin: 20px;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.2s;
+  }
+  
+  #inscreva-se-btn:hover{
+    display: inline-block;
+    margin: 20px;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    animation: glow 2s infinite alternate;
+    /* O valor "infinite" faz a animação repetir indefinidamente */
+    /* O valor "alternate" faz a animação ir e voltar, para suavizar a transição */
+  }
+  
+  header .header-item:hover {
+    color: rgb(132, 14, 201);
+    transform: scale(1.15);
+    transition: .2s;
+  }
+  
+  /*HEADER*/
+  body {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: roboto;
+    font-weight: 200;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+  } 
+  
+  h1 {
+    font-size:  50px;
+    font-weight: 600;
+  
+  }
+  
+  @keyframes textUCM {
+    0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffffff, 0 0 20px #ffffff, 0 0 25px #ffffff, 0 0 30px #ffffff, 0 0 35px #ffffff;
+    }
+    50% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
+    }
+    100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffffff, 0 0 20px #ffffff, 0 0 25px #ffffff, 0 0 30px #ffffff, 0 0 35px #ffffff;
+    }
+  }
+  
+  @keyframes textUCM {
+    0% {
+        text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #ffffff, 0 0 8px #ffffff, 0 0 10px #ffffff, 0 0 12px #ffffff, 0 0 14px #ffffff;
+    }
+    2% {
+        text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px #ffffff, 0 0 16px #ffffff, 0 0 20px #ffffff, 0 0 24px #ffffff, 0 0 28px #ffffff;
+    }
+    2% {
+        text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #ffffff, 0 0 8px #ffffff, 0 0 10px #ffffff, 0 0 12px #ffffff, 0 0 14px #ffffff;
+    }
+  }
+  
+  
+  #title h1 {
+    animation: textUCM 2s infinite, textBlink2 1s infinite;
+  }
+  
+  .logo {
+    height: 50px; /* ajuste o tamanho conforme necessário */
+  }
+  
+  
+  .titulo {
+    font-size:  50px;
+    font-weight: 300;
+  
+  }
+  
+  /*IMAGEM UCM CANTO SUPERIOR ESQUERDO*/
+  #title {
+    display: flex;
+    align-items: center;
+  }
+  
+  #title .logo {
+    width: 150px; /* Ajuste o valor conforme necessário */
+    margin-right: 10px; /* Ajuste o valor conforme necessário */
+  }
+  
+  .italic {
+    font-style: italic;
+  }
+  /*IMAGEM UCM CANTO SUPERIOR ESQUERDO*/
+  
+  
+  /*FOOTER e LI OL ETC*/
+
+ 
+li strong{
+  color: rgb(132, 14, 201);
+  font-size: 35px;
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: list;
+  }
+
+ol li::before {
+  content: counter(item) ". ";
+  font-size: 35px; 
+  counter-increment: item;
+  font-weight: bold;
+  }
+
+ol li {
+  counter-increment: list;
+  font-size: 25px;
+    }
+
+ol li:before {
+  content: counter(list) ".";
+  margin-right: 0.5em;
+    }
+
+ol li p {
+  margin-left: 1em;
+ }
+
+/*footer*/
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-direction: column; /* Por padrão, as colunas ficam uma abaixo da outra */
+  margin-top: 160px;
+  /* Outros estilos */          
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os itens verticalmente */
+}
+
+.footer-column ul {
+  display: none;
+}
+
+/*hidenshow*/
+
+.footer-column h3 {
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.footer-column h3 .toggle-arrow {
+  transition: transform 0.3s;
+}
+.footer-column h3.active .toggle-arrow {
+  transform: rotate(90deg);
+}
+
+.footer-column h3 {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-column h3 .arrow-right {
+  width: 10px;
+  height: 10px;
+  border: solid rgb(255, 255, 255);
+  border-width: 0 2px 2px 0;
+  transform: rotate(-45deg); /* Rotação inicial apontando para a direita */
+  transition: transform 0.3s;
+  margin-left: 10px; /* Alterado para margin-left para posicionar após o texto */
+}
+.footer-column h3.active .arrow-right {
+  transform: rotate(45deg); /* Rotação quando ativo (aponta para baixo) */
+}
+/*fim do hidenshow*/
+
+.footer-column h3 {
+  margin-top: 0;
+}
+
+.footer-column h3 .text-primary {
+  color: rgb(132, 14, 201);
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Additional Styles */
+.list-item {
+  display: flex;
+  align-items: center;
+}
+
+.list-item i {
+  margin-right: 2px;
+}
+
+.list-item a {
+  margin-left: 2px;
+}
+
+.integrantes {
+  display: inline-block;
+  margin: 5px;
+}
+
+/* Alteração para orientação vertical */
+@media screen and (max-width: 767px) {
+  .footer-column {
+    margin: 10px 0; /* Espaçamento entre as colunas na orientação vertical */
+  }
+}

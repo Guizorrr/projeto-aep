@@ -1,0 +1,341 @@
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #title{
+    flex-direction: column;
+    line-height: 10px;
+    
+  }
+  
+  p {
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  
+  a{
+    color: white;
+  }
+  
+  a:hover{
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+  }
+  
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 15px rgb(132, 14, 201);
+      transform: scale(1.05);
+    }
+    50% {
+      box-shadow: 0 0 20px rgb(132, 14, 201);
+      transform: scale(1.1);
+    }
+    100% {
+      box-shadow: 0 0 15px rgb(132, 14, 201);
+      transform: scale(1.05);
+    }
+  }
+  
+  #inscreva-se-btn {
+    display: inline-block;
+    margin: 20px;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.2s;
+  }
+  
+  #inscreva-se-btn:hover{
+    display: inline-block;
+    margin: 20px;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    animation: glow 2s infinite alternate;
+    /* O valor "infinite" faz a animação repetir indefinidamente */
+    /* O valor "alternate" faz a animação ir e voltar, para suavizar a transição */
+  }
+  
+  header .header-item:hover {
+    color: rgb(132, 14, 201);
+    transform: scale(1.15);
+    transition: .2s;
+  }
+  
+  /*HEADER*/
+  body {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: roboto;
+    font-weight: 200;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+  } 
+  
+  @keyframes textUCM {
+    0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffffff, 0 0 20px #ffffff, 0 0 25px #ffffff, 0 0 30px #ffffff, 0 0 35px #ffffff;
+    }
+    50% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
+    }
+    100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffffff, 0 0 20px #ffffff, 0 0 25px #ffffff, 0 0 30px #ffffff, 0 0 35px #ffffff;
+    }
+  }
+  
+  @keyframes textUCM {
+    0% {
+        text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #ffffff, 0 0 8px #ffffff, 0 0 10px #ffffff, 0 0 12px #ffffff, 0 0 14px #ffffff;
+    }
+    2% {
+        text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px #ffffff, 0 0 16px #ffffff, 0 0 20px #ffffff, 0 0 24px #ffffff, 0 0 28px #ffffff;
+    }
+    2% {
+        text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #ffffff, 0 0 8px #ffffff, 0 0 10px #ffffff, 0 0 12px #ffffff, 0 0 14px #ffffff;
+    }
+  }
+  
+  
+
+
+  
+  
+  #title h1 {
+    animation: textUCM 2s infinite, textBlink2 1s infinite;
+  }
+  
+  .logo {
+    height: 50px; /* ajuste o tamanho conforme necessário */
+  }
+
+
+  h1 {
+    font-size:  50px;
+    font-weight: 600;
+  
+  }
+  
+  .titulo {
+    font-size:  50px;
+    font-weight: 300;
+  
+  }
+
+  #title {
+    display: flex;
+    align-items: center;
+  }
+  
+  #title .logo {
+    width: 150px; /* Ajuste o valor conforme necessário */
+    margin-right: 10px; /* Ajuste o valor conforme necessário */
+  }
+  
+  .italic {
+    font-style: italic;
+  }
+
+  
+
+
+
+  p {
+    font-size: 25px;
+  }
+  
+  p strong {
+    color: rgb(132, 14, 201);
+    font-size: 30px;
+  }
+
+  .corpo-texto {
+    margin-bottom: 150px;
+  }
+
+
+  
+  ol {
+    list-style-type: none;
+    counter-reset: list;
+    }
+  
+  ol li::before {
+    content: counter(item) ". ";
+    font-size: 35px; 
+    counter-increment: item;
+    font-weight: bold;
+    }
+  
+  ol li {
+    counter-increment: list;
+    font-size: 25px;
+      }
+  
+  ol li:before {
+    content: counter(list) ".";
+    margin-right: 0.5em;
+      }
+  
+  ol li p {
+    margin-left: 1em;
+   }
+  
+  /*footer*/
+  
+  .footer {
+    background-color: #333;
+     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+    }
+    
+  .footer-column {
+      flex: 1;
+      margin: 0 10px;
+    }
+  
+    /*SITE UNICESUMAR*/
+  
+  .list-item {
+    display: flex;
+    align-items: center;
+  }
+  .list-item i {
+    margin-right: 2px; /* Espaço entre a logo e o texto */
+  }
+  .list-item a {
+    margin-left: 2px; /* Espaço entre a logo e o link */
+  }
+  
+  /*SITE UNICESUMAR*/
+  
+  
+  .integrantes {
+    display: inline-block;
+    margin: 5px;
+   }
+    
+  /* Estilos para telas menores */
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: column; /* Por padrão, as colunas ficam uma abaixo da outra */
+    /* Outros estilos */          
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens verticalmente */
+  }
+  
+  /*hidenshow*/
+
+.footer-column h3 {
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.footer-column h3 .toggle-arrow {
+  transition: transform 0.3s;
+}
+.footer-column h3.active .toggle-arrow {
+  transform: rotate(90deg);
+}
+
+.footer-column h3 {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-column h3 .arrow-right {
+  width: 10px;
+  height: 10px;
+  border: solid rgb(255, 255, 255);
+  border-width: 0 2px 2px 0;
+  transform: rotate(-45deg); /* Rotação inicial apontando para a direita */
+  transition: transform 0.3s;
+  margin-left: 10px; /* Alterado para margin-left para posicionar após o texto */
+}
+.footer-column h3.active .arrow-right {
+  transform: rotate(45deg); /* Rotação quando ativo (aponta para baixo) */
+}
+
+.footer-column ul {
+  display: none;
+}
+
+/*fim do hidenshow*/
+
+
+  .footer-column h3 {
+    margin-top: 0;
+  }
+  
+  .footer-column h3 .text-primary {
+    color: rgb(132, 14, 201);
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Additional Styles */
+  .list-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .list-item i {
+    margin-right: 2px;
+  }
+  
+  .list-item a {
+    margin-left: 2px;
+  }
+  
+  .integrantes {
+    display: inline-block;
+    margin: 5px;
+  }
+  
+  /* Alteração para orientação vertical */
+  @media screen and (max-width: 767px) {
+    .footer-column {
+      margin: 10px 0; /* Espaçamento entre as colunas na orientação vertical */
+    }
+  }
+  
